@@ -14,6 +14,7 @@
   -webkit-text-size-adjust: 100%; */
   font-size: 62.5%;
   scroll-behavior: smooth;
+  background-image: url("./assets/exp_bg.jpg");
 }
 
 * {
@@ -28,7 +29,7 @@ body {
 
 #root {
   color: #fefefe;
-  background-image: url("./assets/exp_bg.jpg");
+  
   padding: 0 50px;
 }
 

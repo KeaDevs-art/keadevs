@@ -1,11 +1,14 @@
-import TitleSection from "./sections/title/title.section"
-
+import { Fragment } from "react";
+import Main from "./sections/main/main.section";
+import TitleSection from "./sections/title/title.section";
 
 const App = () => {
-
   return (
-    <TitleSection />
-  )
-}
+    <Fragment>
+      <TitleSection />
+      <Main />
+    </Fragment>
+  );
+};
 
-export default App
+export default App;
