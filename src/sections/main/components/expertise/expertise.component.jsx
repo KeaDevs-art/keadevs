@@ -1,6 +1,8 @@
+import HeadingSecondary from "../../../../Typography/heading-secondary/heading-secondary.component";
+import HeadingTertiary from "../../../../Typography/heading-tertiary/heading-tertiary.component";
+import Detail from "../../../../Typography/detail/detail.component";
 import {
   ExpertiseContainer,
-  HeadingSecondary,
   CardGroup,
   PreviousButton,
   Scroller,
@@ -8,9 +10,7 @@ import {
   ScrollerItemHidden,
   CardTitle,
   CardContent,
-  DetailNormal,
   NextButton,
-  HeadingTertiary,
 } from "./expertise.styles";
 
 const Expertise = () => {
@@ -21,30 +21,34 @@ const Expertise = () => {
         <PreviousButton>&#10094;</PreviousButton>
         <Scroller>
           <ScrollerItemShown>
-            <tr>
-              <CardTitle>
-                <HeadingTertiary>Frontend Developer</HeadingTertiary>
-              </CardTitle>
-              <CardContent>
-                <DetailNormal>
-                  Passionate about UI aesthetics. Experienced in React framework
-                  development.
-                </DetailNormal>
-              </CardContent>
-            </tr>
+            <tbody>
+              <tr>
+                <CardTitle>
+                  <HeadingTertiary>Frontend Developer</HeadingTertiary>
+                </CardTitle>
+                <CardContent>
+                  <Detail>
+                    Passionate about UI aesthetics. Experienced in React
+                    framework development.
+                  </Detail>
+                </CardContent>
+              </tr>
+            </tbody>
           </ScrollerItemShown>
           <ScrollerItemHidden>
-            <tr>
-              <CardTitle>
-                <HeadingTertiary>Software Engineer</HeadingTertiary>
-              </CardTitle>
-              <CardContent>
-                <DetailNormal>
-                  Experienced in both functional and OOP: Python, Java,
-                  JavaScript, TypeScript.
-                </DetailNormal>
-              </CardContent>
-            </tr>
+            <tbody>
+              <tr>
+                <CardTitle>
+                  <HeadingTertiary>Software Engineer</HeadingTertiary>
+                </CardTitle>
+                <CardContent>
+                  <Detail>
+                    Experienced in both functional and OOP: Python, Java,
+                    JavaScript, TypeScript.
+                  </Detail>
+                </CardContent>
+              </tr>
+            </tbody>
           </ScrollerItemHidden>
         </Scroller>
         <NextButton>&#10095;</NextButton>

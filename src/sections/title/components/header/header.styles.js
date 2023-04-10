@@ -30,10 +30,12 @@ export const NavigationMenuLink = styled.a`
   text-decoration: none;
   color: #fefefe;
   font-size: 1.4rem;
+  cursor: pointer;
 `;
 
 export const NavigationMenuAvatar = styled.img`
   width: 4vh;
   height: 4vh;
   border-radius: 50%;
+  cursor: pointer;
 `;

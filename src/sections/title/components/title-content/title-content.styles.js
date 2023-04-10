@@ -31,20 +31,6 @@ export const SummaryAvatarLeft = styled.img`
   left: 0;
 `;
 
-export const HeadingPrimary = styled.h1`
-  line-height: 1.5;
-  letter-spacing: 2.2;
-  font-size: 10vw;
-  text-transform: uppercase;
-`;
-
-export const About = styled.p`
-  line-height: 1.5;
-  letter-spacing: 2.5;
-  font-size: 22px;
-  text-transform: uppercase;
-`;
-
 export const SummaryAvatarRight = styled.img`
   width: 10.5vw;
   position: absolute;
@@ -54,28 +40,4 @@ export const SummaryAvatarRight = styled.img`
 
 export const Animation = styled.div`
   margin: 100px auto;
-`;
-
-export const Button = styled.a`
-  color: #fefefe;
-  text-decoration: none;
-  outline: 1px solid #fefefe;
-  display: inline-block;
-  border-radius: 10rem;
-  padding: 1.3rem 3.5rem;
-  position: relative;
-  transition: all 0.2s ease;
-
-  &:hover {
-    background-color: rgba(183, 133, 123, 0.9333333333);
-  }
-  &:hover::before {
-    content: "Get Started →";
-    color: #161616;
-    background-color: #fefefe;
-    padding: 1rem 2.5rem;
-    position: absolute;
-    top: -4.5rem;
-    right: -10rem;
-  }
 `;

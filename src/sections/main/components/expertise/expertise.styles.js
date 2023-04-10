@@ -5,12 +5,6 @@ export const ExpertiseContainer = styled.section`
   margin: 5rem 0;
 `;
 
-export const HeadingSecondary = styled.h2`
-  line-height: 1.5;
-  letter-spacing: 2.2;
-  font-size: 5vw;
-`;
-
 export const CardGroup = styled.div`
   display: grid;
   grid-template-columns: -webkit-min-content -webkit-max-content -webkit-min-content;
@@ -58,19 +52,11 @@ export const CardTitle = styled.td`
   border-radius: 2rem 0 0 2rem;
 `;
 
-export const HeadingTertiary = styled.h3`
-  font-size: 1.8rem;
-`;
-
 export const CardContent = styled.td`
   padding: 8rem 5rem;
   border: 1px solid #fefefe;
   background-color: rgba(183, 133, 123, 0.9333333333);
   border-radius: 0 2rem 2rem 0;
-`;
-
-export const DetailNormal = styled.p`
-  font-size: 1.4rem;
 `;
 
 export const ScrollerItemHidden = styled.table`
