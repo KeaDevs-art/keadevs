@@ -11,50 +11,52 @@ export const ProjectsContainer = styled.section`
   margin: 10rem 0;
 `;
 
-export const ProjectOne = styled.figure`
-  grid-column: 1 / span 2;
-  grid-row: 1/2;
-`;
+// export const Project = styled.figure`
+//   .one {
+//     grid-column: 1 / span 2;
+//     grid-row: 1/2;
+//   }
 
-export const ProjectTwo = styled.figure`
-  grid-column: 3/span 2;
-  grid-row: 1/2;
-`;
+//   .two {
+//     grid-column: 3 / span 2;
+//     grid-row: 1/2;
+//   }
 
-export const ProjectThree = styled.figure`
-   grid-column: 5/-1;
-  grid-row: 1/2;
-`;
+//   .three {
+//     grid-column: 5/-1;
+//     grid-row: 1/2;
+//   }
 
-export const ProjectFour = styled.figure`
-  grid-column: 1/5;
-  grid-row: 2/span 2;
-`;
+//   .four {
+//     grid-column: 1/5;
+//     grid-row: 2 / span 2;
+//   }
 
-export const ProjectFive = styled.figure`
-  grid-column: 5/-1;
-  grid-row: 2/3;
-`;
+//   .five {
+//     grid-column: 5/-1;
+//     grid-row: 2/3;
+//   }
 
-export const ProjectSix = styled.figure`
-  grid-column: 5/-1;
-  grid-row: 3/4;
-`;
+//   .six {
+//     grid-column: 5/-1;
+//     grid-row: 3/4;
+//   }
 
-export const ProjectSeven = styled.figure`
-   grid-column: 1/span 2;
-  grid-row: 4/5;
-`;
+//   .seven {
+//     grid-column: 1 / span 2;
+//     grid-row: 4/5;
+//   }
 
-export const ProjectEight = styled.figure`
-grid-column: 3/span 2;
-  grid-row: 4/5;
-`;
+//   .eight {
+//     grid-column: 3 / span 2;
+//     grid-row: 4/5;
+//   }
 
-export const ProjectNine = styled.figure`
-  grid-column: 5/-1;
-  grid-row: 4/5;
-`;
+//   .nine {
+//     grid-column: 5/-1;
+//     grid-row: 4/5;
+//   }
+// `;
 
 export const ProjectImage = styled.img`
   width: 100%;

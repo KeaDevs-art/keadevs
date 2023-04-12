@@ -1,9 +1,9 @@
 import { Heading } from "./heading-primary.styles";
 
-const HeadingPrimary = () => {
+const HeadingPrimary = ({ children }) => {
 
 return (
-    <Heading></Heading>
+    <Heading>{children}</Heading>
 );
 }
 
