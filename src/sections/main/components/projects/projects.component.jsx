@@ -62,7 +62,9 @@ const Projects = () => {
       {projects.map(({ classLevel, imageSource, heading }, _idx) => (
         <figure key={`${classLevel}${_idx}`} className={classLevel}>
           <ProjectImage src={imageSource} />
-          <ProjectAbout>{heading}</ProjectAbout>
+          <ProjectAbout>
+            <HeadingTertiary>{heading}</HeadingTertiary>
+          </ProjectAbout>
         </figure>
       ))}
     </ProjectsContainer>
