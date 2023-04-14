@@ -12,26 +12,36 @@ import {
 } from "./expertise.styles";
 
 const Expertise = () => {
+  const Next = () => {
+    document.querySelector(".shown").style.display = "none";
+    document.querySelector(".hidden").style.display = "block";
+  };
+
+  const Previous = () => {
+    document.querySelector(".shown").style.display = "block";
+    document.querySelector(".hidden").style.display = "none";
+  };
+
   return (
     <ExpertiseContainer id="expertise">
       <HeadingSecondary>My Expertise</HeadingSecondary>
       <CardGroup>
-        <PreviousButton>&#10094;</PreviousButton>
+        <PreviousButton onClick={Previous}>&#10094;</PreviousButton>
         <Scroller>
-          <ScrollerItemShown>
+          <ScrollerItemShown className="shown">
             <ExpertiseItem
               cardTitle="Frontend Developer"
               detail="Passionate about UI aesthetics. Experienced in React framework development."
             />
           </ScrollerItemShown>
-          <ScrollerItemHidden>
+          <ScrollerItemHidden className="hidden">
             <ExpertiseItem
               cardTitle="Software Engineer"
               detail="Experienced in both functional and OOP: Python, Java, JavaScript, TypeScript."
             />
           </ScrollerItemHidden>
         </Scroller>
-        <NextButton>&#10095;</NextButton>
+        <NextButton onClick={Next}>&#10095;</NextButton>
       </CardGroup>
     </ExpertiseContainer>
   );
