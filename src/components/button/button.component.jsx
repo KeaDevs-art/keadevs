@@ -1,9 +1,10 @@
-import { ButtonRegular } from "./button.styles";
+import { GetStarted, ButtonRegular } from "./button.styles";
 
-const Button = ({ children }) => {
+const Button = ({ children, regular }) => {
+    const Actionable = regular ? ButtonRegular : GetStarted;
 
     return (
-        <ButtonRegular>{children}</ButtonRegular>
+        <Actionable regular={regular}>{children}</Actionable>
     );
 }
 

@@ -25,7 +25,7 @@ const Content = () => {
                 <SummaryAvatarRight src={AvatarRight} />
             </Summary>
             <Animation>
-                <Button>→</Button>
+                <Button href="#expertise">→</Button>
             </Animation>
         </ContentContainer>
     );

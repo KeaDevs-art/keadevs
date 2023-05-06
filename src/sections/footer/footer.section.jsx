@@ -11,29 +11,36 @@ import {
   Platform,
   GetInTouch,
 } from "./footer.styles";
+import Button from "../../components/button/button.component";
+import Detail from "../../Typography/detail/detail.component";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
     <section id="section-footer">
       <FooterContainer>
+        <GetInTouch>
+          <DetailHeading>
+            Let's enrich lives through the application of technology
+          </DetailHeading>
+          <Button className="btn"><Detail>Get in touch &nbsp; →</Detail></Button>
+        </GetInTouch>
         <MediaPlatforms>
           <Platform>
             <GitHubIcon sx={{ fontSize: 80 }} />
             <HeadingSecondary>Github</HeadingSecondary>
           </Platform>
           <Platform>
-            <TwitterIcon sx={{ fontSize: 80 }} />
-            <HeadingSecondary>Twitter</HeadingSecondary>
-          </Platform>
-          <Platform>
             <LinkedInIcon sx={{ fontSize: 80 }} />
             <HeadingSecondary>LinkedIn</HeadingSecondary>
           </Platform>
+          <Platform>
+            <TwitterIcon sx={{ fontSize: 80 }} />
+            <HeadingSecondary>Twitter</HeadingSecondary>
+          </Platform>
         </MediaPlatforms>
-        <GetInTouch>
-          <DetailHeading>Would love to join your team</DetailHeading>
-          <button className="btn">Get in touch &nbsp; →</button>
-        </GetInTouch>
+        <Detail>&copy; {year} Shadow products by KeaDevs</Detail>
       </FooterContainer>
     </section>
   );
